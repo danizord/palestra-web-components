@@ -1,0 +1,37 @@
+#inicial div {
+    position:absolute;
+    bottom:0;
+    right:0;    
+    float: right;
+    text-align: right;
+}
+
+.reveal section img {
+    background:none;
+    border: 0;
+}
+
+.reveal section table td.yep {
+    background:green;
+}
+
+.reveal section table td.almost {
+    background:yellow;
+}
+
+.reveal section table td.nope {
+    background:red;
+}
+
+.reveal table {
+  border-bottom: 3px solid;
+  border-color: grey;
+}
+
+.reveal table td {
+  padding: 0 0;
+  border: 3px solid;
+  border-color: grey;
+  width: 200px;
+  text-align: center;
+}

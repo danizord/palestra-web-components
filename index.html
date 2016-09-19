@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/web-components.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Custom elements -->
+		<link rel="import" href="bower_components/polymer/polymer.html">
+		<link rel="import" href="bower_components/chart-elements/chart-elements.html">
+		<link rel="import" href="bower_components/google-map/google-map-elements.html">
+		<link rel="import" href="bower_components/google-url-shortener/google-url-shortener.html">
+		<link rel="import" href="bower_components/paper-elements/paper-elements.html">
+		<link rel="import" href="bower_components/google-youtube/google-youtube.html">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="inicial">
+					<h2>WEB COMPONENTS</h2>
+					<img src="img/logo.svg" style="height:500px">
+					<div>
+						Daniel Gimenes<br>
+						Gabriel Coradelli<br>
+						Letícia Giolli<br>
+						Mateus Grigatti<br>
+						Patricia Pereira
+					</div>
+				</section>	
+				
+				<section>
+					<h2>Ferramentas VS Plataforma</h2>
+				</section>
+
+				<section>
+					<google-map latitude="37.779" longitude="-122.3892" min-zoom="9" max-zoom="11">					
+				</section>
+
+				<section>
+					<google-url-shortener id="shortener"></google-url-shortener>
+				</section>
+
+				<section>
+					<h2>Web Components?</h2>
+				</section>
+
+				<section data-background="img/tim-berners-lee.jpg">
+					<h1>W3C</h1>
+				</section>
+				
+				<section>
+					<img src="img/icon-customelements.png">
+					<h2>Custom elements</h2>
+				</section>
+
+				<section>
+					<img src="img/icon-htmlimports.png">
+					<h2>HTML Imports</h2>
+				</section>
+
+				<section>
+					<img src="img/icon-templates.png">
+					<h2>Templates</h2>
+				</section>
+
+				<section>
+					<img src="img/icon-shadowdom.png">
+					<h2>Shadow DOM</h2>
+				</section>
+
+				<section>
+					<h3>Browser support</h3>
+					<br>
+					<table>
+						<thead>
+							<tr>
+								<td></td>
+								<td>Chrome</td>
+								<td>Opera</td>
+								<td>Firefox</td>
+								<td>Safari</td>
+								<td>IE/Edge</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="img/icon-status-templates.png"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+							</tr>
+							<tr>
+								<td><img src="img/icon-status-htmlimports.png"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+								<td class="almost"></td>
+								<td class="nope"></td>
+								<td class="nope"></td>
+							</tr>
+							<tr>
+								<td><img src="img/icon-status-customelements.png"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+								<td class="almost"></td>
+								<td class="nope"></td>
+								<td class="nope"></td>
+							</tr>
+							<tr>
+								<td><img src="img/icon-status-shadowdom.png"></td>
+								<td class="yep"></td>
+								<td class="yep"></td>
+								<td class="almost"></td>
+								<td class="almost"></td>
+								<td class="nope"></td>
+							</tr>																				
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Quem usa?</h2>
+				</section>
+
+				<section data-background="white" data-transition="concave">
+					<img src="img/google-logo.png" style="box-shadow:none;">
+				</section>
+
+				<section data-background="white">
+					<img src="img/material-design.svg">
+				</section>
+
+				<section>
+					<h2>Material design</h2>
+					<google-youtube video-id="Q8TXgCzxEnw" fluid></google-youtube>
+				</section>
+
+				<section>
+					<h2>Eu quero!</h2>
+					<img src="img/give-it-to-me.gif" style="width:100%;height:100%">
+				</section>
+
+				<section>
+					<h2>Onde encontrar?</h2>
+				</section>
+
+				<section>
+						<h2>Polymer</h2>
+						<img src="img/polymer-logo.png">
+						<p>https://elements.polymer-project.org</p>
+				</section>
+
+				<section>
+					<h2>CustomElements.io</h2>
+					<img src="img/site-customelements.png">
+				</section>
+
+				<section>
+					<h2>Como usar?</h2>
+				</section>
+
+				<section data-background="#FFCC2F">
+					<h1 style="color:#EF5734">Bower.io</h1>
+					<img src="img/bower-logo.svg" style="box-shadow:none;">
+				</section>
+
+				<section>
+					<h3>1. Instalar</h3>
+					<pre><code class="hljs" data-trim contenteditable>$ bower i paper-tabs -S</code></pre>
+
+					<div class="fragment">
+					<h3>2. Importar</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+&lthead&gt
+  &ltlink rel="import" href="bower_components/paper-dialog/paper-dialog.html"&gt
+&lt/head&gt
+						</code></pre>
+					</div>					
+
+					<div class="fragment">
+						<h3>3. Usar</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+&ltpaper-tabs selected="0" class="bottom">
+  &ltpaper-tab>Aba 1&lt/paper-tab&gt
+  &ltpaper-tab>Aba 2&lt/paper-tab&gt
+  &ltpaper-tab>Aba 3&lt/paper-tab&gt
+  &ltpaper-tab>Aba 4&lt/paper-tab&gt
+&lt/paper-tabs&gt
+						</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<paper-tabs selected="0" class="bottom">
+						<paper-tab>Aba 1</paper-tab>
+						<paper-tab>Aba 2</paper-tab>
+						<paper-tab>Aba 3</paper-tab>
+						<paper-tab>Aba 4</paper-tab>
+					</paper-tabs>					
+				</section>
+
+				<section>
+					<h2>Criando um componente</h2>
+				</section>
+
+				<section data-background="img/thats-all-folks.gif">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
